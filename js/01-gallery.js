@@ -7,9 +7,9 @@ let instance = "";
 const gallaryEl = document.querySelector('.gallery');
 
 gallaryEl.insertAdjacentHTML('beforeend', createGallery(galleryItems));
-// galleryItems.preventDefault();
+
 function createGallery(galleryItems) {
-    // galleryItems.preventDefault();
+   
     return galleryItems
      
         .map(({ preview, original, description }) => {
@@ -39,6 +39,7 @@ function onItemsClick(event) {
 instance = basicLightbox.create(`
     <img src="${event.target.dataset.source}">`)
   instance.show();
+
   window.addEventListener('keydown', onItemClose);
   
 }
