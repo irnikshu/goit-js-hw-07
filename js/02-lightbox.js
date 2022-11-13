@@ -29,7 +29,7 @@ function onItemsClick(event) {
     if (!event.target.classList.contains('gallery__image')) {
         return;
     }
-    console.log(event.target);
+    console.log(event.target.dataset.source);
 
 //     const lightbox = new SimpleLightbox('.gallery a', {
 //         captionsData: 'alt',
