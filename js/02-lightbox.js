@@ -29,9 +29,18 @@ function onItemsClick(event) {
     if (!event.target.classList.contains('gallery__image')) {
         return;
     }
-    console.log(event.target.dataset.source);
+    console.log(event.target);
 
-    const gallery = new SimpleLightbox('.gallery a', {
+//     const lightbox = new SimpleLightbox('.gallery a', {
+//         captionsData: 'alt',
+//         captionDelay: 250,
+//         overlayOpacity: 0.8,
+//         closeText: '×',
+//         scrollZoom: false,
+
+// });
+}
+  const lightbox = new SimpleLightbox('.gallery a', {
         captionsData: 'alt',
         captionDelay: 250,
         overlayOpacity: 0.8,
@@ -39,5 +48,3 @@ function onItemsClick(event) {
         scrollZoom: false,
 
 });
-}
-
